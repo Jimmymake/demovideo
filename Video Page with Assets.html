@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Video Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg,  grey);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #ff8a00, Black);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 1200px;
+            width: 90%;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        .video-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+        .video-info {
+            padding: 20px;
+        }
+        .video-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+        .video-desc {
+            margin-bottom: 15px;
+            color: #e0e0e0;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+        }
+        .video-wrapper video {
+            width: 100%;
+            display: block;
+            border: none;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: auto;
+        }
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .container { gap: 30px; }
+            .video-title { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mamlaka Video Collection</h1>
+        <p class="tagline">Pitch Dec Videos </p>
+    </header>
+
+    <div class="container">
+        <!-- Video 1 -->
+        <!-- <div class="video-card">
+            <div class="video-wrapper">
+                <video controls poster="assets/placeholder1.jpg">
+                    <source src="video\vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Yeshara Demo Video</h2>
+                <p class="video-desc">Experience breathtaking views from the world's highest peaks in this stunning nature documentary.</p>
+
+          <a href="https://app.yeshara.network/registe">https://app.yeshara.network/registe</a>
+          
+            </div>
+        </div> -->
+                <div class="video-card">
+            <div class="video-wrapper">
+               <video controls poster="video\Screenshot 2025-06-24 133613.png">
+                  <source src="video\vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">IMC(Impala Coin)</h2>
+                <p class="video-desc">Dive deep into mysterious underwater worlds with marine biologists discovering new species.</p>
+          
+             <a href="https://app.yeshara.network/registe">https://app.yeshara.network/registe</a>
+           
+            </div>
+        </div>
+        <!-- Video 2 -->
+        <div class="video-card">
+            <div class="video-wrapper">
+               <video controls poster="video\Screenshot 2025-06-24 133652.png">
+                    <source src="video\IMC.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">IMC(Impala Coin)</h2>
+                <p class="video-desc">Dive deep into mysterious underwater worlds with marine biologists discovering new species.</p>
+          
+            <a href=" https://app.impalapay.com/"> https://app.impalapay.com/</a>
+           
+            </div>
+        </div>
+        
+        <!-- Video 3 -->
+        <div class="video-card">
+            <div class="video-wrapper" >
+                <video controls poster="video\Screenshot 2025-06-24 133712.png">
+                    <source src="video\Black and Yellow Modern Clean Business Service Information Mobile Video (3).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Commet  App</h2>
+                <p class="video-desc">Watch cities come alive in this mesmerizing compilation of day-to-night transitions.</p>
+                
+
+                   <a href="https://play.google.com/store/apps/details?id=com.cometswitch.kenya&pcampaignid=web_share/"> Link To playstore</a> <br>
+    <a href="https://apps.apple.com/ke/app/impalapay-mobile/id6449749069"> Link To AppStore</a>
+                   
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Video Gallery | All Rights Reserved </p>
+            <p>Designed with ❤️ for the best viewing experience</p>
+        </div>
+    </footer>
+
+</body>
+</html>
